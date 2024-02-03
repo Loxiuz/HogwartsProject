@@ -1,6 +1,6 @@
 package edu.hogwarts;
 
-public class HogwartsStudent {
+public class HogwartsStudent extends Student implements HogwartsPerson {
 
     private House house;
     private boolean prefect;

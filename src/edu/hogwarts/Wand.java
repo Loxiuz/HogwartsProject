@@ -1,6 +1,6 @@
 package edu.hogwarts;
 
-public class Wand {
+public class Wand extends TeachingMaterial {
 
     private double lengthInInches;
     private String wood;

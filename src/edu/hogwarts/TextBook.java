@@ -1,6 +1,6 @@
 package edu.hogwarts;
 
-public class TextBook {
+public class TextBook extends TeachingMaterial {
 
     private String title;
     private String author;

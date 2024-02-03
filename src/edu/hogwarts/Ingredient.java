@@ -1,6 +1,6 @@
 package edu.hogwarts;
 
-public class Ingredient {
+public class Ingredient extends TeachingMaterial {
 
     private String name;
     private double amount;

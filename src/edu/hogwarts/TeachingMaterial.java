@@ -1,6 +1,6 @@
 package edu.hogwarts;
 
-public abstract class TeachingMaterial{
+public abstract class TeachingMaterial {
 
     private String name;
     private boolean onShoppingList;

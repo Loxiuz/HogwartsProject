@@ -36,4 +36,13 @@ public class Wand extends TeachingMaterial {
     public void setCore(String core) {
         this.core = core;
     }
+
+    @Override
+    public String toString() {
+        return "Wand{" +
+                "lengthInInches=" + lengthInInches +
+                ", wood='" + wood + '\'' +
+                ", core='" + core + '\'' +
+                '}';
+    }
 }

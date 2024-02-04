@@ -74,8 +74,13 @@ public class Person {
         return middleName != null && !middleName.isEmpty();
     }
 
+    @Override
     public String toString() {
-        return firstName + " " + middleName + " " + lastName;
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
     }
 }
 

@@ -1,5 +1,7 @@
 package edu.hogwarts;
 
+import java.util.Arrays;
+
 public class Course {
 
     private Subject subject;
@@ -44,5 +46,15 @@ public class Course {
 
     public void setMaterials(TeachingMaterial[] materials) {
         this.materials = materials;
+    }
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "subject=" + subject +
+                ", teacher=" + teacher +
+                ", students=" + Arrays.toString(students) +
+                ", materials=" + Arrays.toString(materials) +
+                '}';
     }
 }

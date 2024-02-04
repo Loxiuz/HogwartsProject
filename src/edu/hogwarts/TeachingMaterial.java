@@ -55,4 +55,15 @@ public abstract class TeachingMaterial {
     public void setNotes(String notes) {
         this.notes = notes;
     }
+
+    @Override
+    public String toString() {
+        return "TeachingMaterial{" +
+                "name='" + name + '\'' +
+                ", onShoppingList=" + onShoppingList +
+                ", required=" + required +
+                ", provided=" + provided +
+                ", notes='" + notes + '\'' +
+                '}';
+    }
 }

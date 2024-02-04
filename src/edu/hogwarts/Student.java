@@ -50,4 +50,13 @@ public class Student extends Person {
     public void setGraduated(boolean graduated) {
         this.graduated = graduated;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "graduationYear=" + graduationYear +
+                ", graduated=" + graduated +
+                ", enrollmentYear=" + enrollmentYear +
+                '}';
+    }
 }

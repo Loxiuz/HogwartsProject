@@ -1,5 +1,7 @@
 package edu.hogwarts;
 
+import java.util.Arrays;
+
 public class HogwartsStudent extends Student implements HogwartsPerson {
 
     private House house;
@@ -51,5 +53,14 @@ public class HogwartsStudent extends Student implements HogwartsPerson {
 
     public void setTeams(String[] teams) {
         this.teams = teams;
+    }
+
+    @Override
+    public String toString() {
+        return "HogwartsStudent{" +
+                "house=" + house +
+                ", prefect=" + prefect +
+                ", teams=" + Arrays.toString(teams) +
+                '}';
     }
 }

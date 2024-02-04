@@ -46,4 +46,14 @@ public class TextBook extends TeachingMaterial {
     public void setPublishedYear(int publishedYear) {
         this.publishedYear = publishedYear;
     }
+
+    @Override
+    public String toString() {
+        return "TextBook{" +
+                "title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", publisher='" + publisher + '\'' +
+                ", publishedYear=" + publishedYear +
+                '}';
+    }
 }

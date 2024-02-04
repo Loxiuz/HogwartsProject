@@ -58,4 +58,13 @@ public class Teacher extends Person {
     public void setEmploymentEnd(Date employmentEnd) {
         this.employmentEnd = employmentEnd;
     }
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "empType='" + empType + '\'' +
+                ", employmentStart=" + employmentStart +
+                ", employmentEnd=" + employmentEnd +
+                '}';
+    }
 }

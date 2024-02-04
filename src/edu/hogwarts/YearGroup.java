@@ -1,5 +1,6 @@
 package edu.hogwarts;
 
+import java.util.Arrays;
 import java.util.Date;
 
 public class YearGroup {
@@ -36,5 +37,14 @@ public class YearGroup {
 
     public void setStudents(Student[] students) {
         this.students = students;
+    }
+
+    @Override
+    public String toString() {
+        return "YearGroup{" +
+                "schoolYear=" + schoolYear +
+                ", beginningOfSchoolYear=" + beginningOfSchoolYear +
+                ", students=" + Arrays.toString(students) +
+                '}';
     }
 }

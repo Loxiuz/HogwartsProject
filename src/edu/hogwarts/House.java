@@ -1,5 +1,7 @@
 package edu.hogwarts;
 
+import java.util.Arrays;
+
 public class House {
 
     private String name;
@@ -36,5 +38,12 @@ public class House {
         this.color = color;
     }
 
-
+    @Override
+    public String toString() {
+        return "House{" +
+                "name='" + name + '\'' +
+                ", founder='" + founder + '\'' +
+                ", color=" + Arrays.toString(color) +
+                '}';
+    }
 }

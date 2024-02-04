@@ -7,6 +7,13 @@ public class Course {
     private Student[] students;
     private TeachingMaterial[] materials;
 
+    public Course(Subject subject, Teacher teacher, Student[] students, TeachingMaterial[] materials) {
+        this.subject = subject;
+        this.teacher = teacher;
+        this.students = students;
+        this.materials = materials;
+    }
+
     public Subject getSubject() {
         return subject;
     }

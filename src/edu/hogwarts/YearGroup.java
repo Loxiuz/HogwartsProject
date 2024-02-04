@@ -8,6 +8,12 @@ public class YearGroup {
     private Date beginningOfSchoolYear;
     private Student[] students;
 
+    public YearGroup(int schoolYear, Date beginningOfSchoolYear, Student[] students) {
+        this.schoolYear = schoolYear;
+        this.beginningOfSchoolYear = beginningOfSchoolYear;
+        this.students = students;
+    }
+
     public int getSchoolYear() {
         return schoolYear;
     }

@@ -6,6 +6,29 @@ public class HogwartsStudent extends Student implements HogwartsPerson {
     private boolean prefect;
     private String[] teams;
 
+    public HogwartsStudent() {
+    }
+
+    public HogwartsStudent(House house, boolean prefect, String[] teams) {
+        this.house = house;
+        this.prefect = prefect;
+        this.teams = teams;
+    }
+
+    public HogwartsStudent(String fullName, House house, boolean prefect, String[] teams) {
+        super(fullName);
+        this.house = house;
+        this.prefect = prefect;
+        this.teams = teams;
+    }
+
+    public HogwartsStudent(String firstName, String middleName, String lastName, int graduationYear, boolean graduated, int enrollmentYear, House house, boolean prefect, String[] teams) {
+        super(firstName, middleName, lastName, graduationYear, graduated, enrollmentYear);
+        this.house = house;
+        this.prefect = prefect;
+        this.teams = teams;
+    }
+
     public House getHouse() {
         return house;
     }

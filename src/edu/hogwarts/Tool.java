@@ -5,6 +5,12 @@ public class Tool extends TeachingMaterial {
     private String name;
     private String description;
 
+    public Tool(String name, boolean onShoppingList, boolean required, boolean provided, String notes, String name1, String description) {
+        super(name, onShoppingList, required, provided, notes);
+        this.name = name1;
+        this.description = description;
+    }
+
     @Override
     public String getName() {
         return name;

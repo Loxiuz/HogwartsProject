@@ -8,6 +8,33 @@ public class Teacher extends Person {
     private Date employmentStart;
     private Date employmentEnd;
 
+    public Teacher(String empType, Date employmentStart, Date employmentEnd) {
+        this.empType = empType;
+        this.employmentStart = employmentStart;
+        this.employmentEnd = employmentEnd;
+    }
+
+    public Teacher(String fullName, String empType, Date employmentStart, Date employmentEnd) {
+        super(fullName);
+        this.empType = empType;
+        this.employmentStart = employmentStart;
+        this.employmentEnd = employmentEnd;
+    }
+
+    public Teacher(String firstName, String lastName, String empType, Date employmentStart, Date employmentEnd) {
+        super(firstName, lastName);
+        this.empType = empType;
+        this.employmentStart = employmentStart;
+        this.employmentEnd = employmentEnd;
+    }
+
+    public Teacher(String firstName, String middleName, String lastName, String empType, Date employmentStart, Date employmentEnd) {
+        super(firstName, middleName, lastName);
+        this.empType = empType;
+        this.employmentStart = employmentStart;
+        this.employmentEnd = employmentEnd;
+    }
+
     public String getEmpType() {
         return empType;
     }

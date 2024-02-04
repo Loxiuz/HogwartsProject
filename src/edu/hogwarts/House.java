@@ -6,6 +6,12 @@ public class House {
     private String founder;
     private String[] color;
 
+    public House(String name, String founder, String[] color) {
+        this.name = name;
+        this.founder = founder;
+        this.color = color;
+    }
+
     public String getName() {
         return name;
     }

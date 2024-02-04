@@ -6,6 +6,12 @@ public class Subject {
     private int schoolYear;
     private boolean elective;
 
+    public Subject(String name, int schoolYear, boolean elective) {
+        this.name = name;
+        this.schoolYear = schoolYear;
+        this.elective = elective;
+    }
+
     public String getName() {
         return name;
     }

@@ -7,6 +7,26 @@ public class Student extends Person {
 
     private int enrollmentYear;
 
+    public Student(){}
+
+    public Student(String fullName) {
+        setFullName(fullName);
+    }
+
+    public Student(
+            String firstName,
+            String middleName,
+            String lastName,
+            int graduationYear,
+            boolean graduated,
+            int enrollmentYear
+    ) {
+        super(firstName, middleName, lastName);
+        this.graduationYear = graduationYear;
+        this.graduated = graduated;
+        this.enrollmentYear = enrollmentYear;
+    }
+
     public int getEnrollmentYear() {
         return enrollmentYear;
     }

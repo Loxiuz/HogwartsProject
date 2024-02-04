@@ -6,6 +6,13 @@ public class Wand extends TeachingMaterial {
     private String wood;
     private String core;
 
+    public Wand(String name, boolean onShoppingList, boolean required, boolean provided, String notes, double lengthInInches, String wood, String core) {
+        super(name, onShoppingList, required, provided, notes);
+        this.lengthInInches = lengthInInches;
+        this.wood = wood;
+        this.core = core;
+    }
+
     public double getLengthInInches() {
         return lengthInInches;
     }

@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Teacher extends Person {
 
-    private String empType; //String eller anden ny klasse?
+    private String empType;
     private Date employmentStart;
     private Date employmentEnd;
 

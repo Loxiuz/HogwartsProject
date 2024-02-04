@@ -11,6 +11,11 @@ public class Tool extends TeachingMaterial {
         this.description = description;
     }
 
+    public Tool(String name, String description) {
+        this.name = name;
+        this.description = description;
+    }
+
     @Override
     public String getName() {
         return name;

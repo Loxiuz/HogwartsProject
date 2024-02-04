@@ -7,6 +7,14 @@ public class TextBook extends TeachingMaterial {
     private String publisher;
     private int publishedYear;
 
+    public TextBook(String title, String author, String publisher, int publishedYear) {
+        super();
+        this.title = title;
+        this.author = author;
+        this.publisher = publisher;
+        this.publishedYear = publishedYear;
+    }
+
     public TextBook(String name, boolean onShoppingList, boolean required, boolean provided, String notes, String title, String author, String publisher, int publishedYear) {
         super(name, onShoppingList, required, provided, notes);
         this.title = title;

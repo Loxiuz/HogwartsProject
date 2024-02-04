@@ -13,6 +13,12 @@ public class Ingredient extends TeachingMaterial {
         this.unit = unit;
     }
 
+    public Ingredient(String name, double amount, String unit) {
+        this.name = name;
+        this.amount = amount;
+        this.unit = unit;
+    }
+
     @Override
     public String getName() {
         return name;

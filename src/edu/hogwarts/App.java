@@ -40,7 +40,14 @@ public class App {
         };
 
         TeachingMaterial[] teachingMaterial = {
-
+                new TextBook("Advanced Potion-making", "Libatius Borage", "Merge Books", 1946 ),
+                new Tool("Cauldron", "Cauldron Description"),
+                new Tool("Silver knife", "Silver Knife Description"),
+                new Ingredient("Sloth 'brain", 15, "Unit1"),
+                new Ingredient("Scarab beetles", 20, "Unit2"),
+                new Ingredient("Newt spleens", 25, "Unit3"),
+                new Ingredient("Worm wood", 30, "Unit4"),
+                new Ingredient("Knarl quills", 35, "Unit5"),
         };
 
         Course course = new Course(subject, teacher, students, teachingMaterial);

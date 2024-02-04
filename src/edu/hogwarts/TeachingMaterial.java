@@ -16,6 +16,9 @@ public abstract class TeachingMaterial {
         this.notes = notes;
     }
 
+    public TeachingMaterial() {
+           }
+
     public String getName() {
         return name;
     }

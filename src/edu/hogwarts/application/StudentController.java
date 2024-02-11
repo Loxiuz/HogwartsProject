@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class StudentController {
 
-    public Map<Integer, Student> allStudents = new HashMap<>(); //Kun public indtil create er lavet
+    private Map<Integer, Student> allStudents = new HashMap<>(); //Kun public indtil create er lavet
     private int lastId = 0;
 
     public void createStudent(Student student){

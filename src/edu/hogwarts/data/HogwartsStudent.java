@@ -10,8 +10,7 @@ public class HogwartsStudent extends Student implements HogwartsPerson {
     private boolean prefect;
     private String[] teams;
 
-    public HogwartsStudent() {
-    }
+    public HogwartsStudent() {}
 
     public HogwartsStudent(House house, boolean prefect, String[] teams) {
         this.house = house;
@@ -19,8 +18,15 @@ public class HogwartsStudent extends Student implements HogwartsPerson {
         this.teams = teams;
     }
 
-    public HogwartsStudent(String fullName, House house, boolean prefect, String[] teams) {
-        super(fullName);
+    public HogwartsStudent(String fullName, int age, House house, boolean prefect) {
+        super(fullName, age);
+        this.house = house;
+        this.prefect = prefect;
+        this.teams = teams;
+    }
+
+    public HogwartsStudent(String fullName, int age, House house, boolean prefect, String[] teams) {
+        super(fullName, age);
         this.house = house;
         this.prefect = prefect;
         this.teams = teams;

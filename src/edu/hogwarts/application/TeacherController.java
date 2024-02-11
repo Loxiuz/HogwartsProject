@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class TeacherController {
 
-    public Map<Integer, Teacher> allTeachers = new HashMap<>(); //Kun public indtil create er lavet
+    private Map<Integer, Teacher> allTeachers = new HashMap<>(); //Kun public indtil create er lavet
 
     private int lastId = 0;
 

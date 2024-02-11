@@ -6,6 +6,8 @@ import edu.hogwarts.application.StudentController;
 import edu.hogwarts.application.TeacherController;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.List;
+
 public class InitData {
 
     private  StudentController studentController;
@@ -17,25 +19,41 @@ public class InitData {
     }
 
     public void initData(){
-        studentController.createStudent(new Student("",0));
-        studentController.createStudent(new Student("",0));
-        studentController.createStudent(new Student("",0));
-        studentController.createStudent(new Student("",0));
-        studentController.createStudent(new Student("",0));
-        studentController.createStudent(new Student("",0));
-        studentController.createStudent(new Student("",0));
-        studentController.createStudent(new Student("",0));
-        studentController.createStudent(new Student("",0));
-        studentController.createStudent(new Student("",0));
-        studentController.createStudent(new Student("",0));
-        studentController.createStudent(new Student("",0));
 
-        teacherController.createTeacher(new Teacher("", 0));
-        teacherController.createTeacher(new Teacher("", 0));
-        teacherController.createTeacher(new Teacher("", 0));
-        teacherController.createTeacher(new Teacher("", 0));
-        teacherController.createTeacher(new Teacher("", 0));
 
+        House gryffindor = new House("Gryffindor", "Godric Gryffindor", new String[]{"Scarlet", "Gold"});
+        House hufflepuff = new House("Hufflepuff","Helga Hufflepuff", new String[]{"Yellow", "Black"});
+        House ravenclaw = new House("Ravenclaw", "Rowena Ravenclaw", new String[]{"Blue", "Bronze"});
+        House slytherin = new House("Slytherin", "Salazar Slytherin", new String[]{"Green", "Silver"});
+
+        studentController.createStudent(new HogwartsStudent("Harry Potter",11, gryffindor, false));
+        studentController.createStudent(new HogwartsStudent("Hermione Granger",12, gryffindor, true));
+        studentController.createStudent(new HogwartsStudent("Ronald Weasley",11, gryffindor, true));
+        studentController.createStudent(new HogwartsStudent("Hannah Abbott",12, hufflepuff, true));
+        studentController.createStudent(new HogwartsStudent("Susan Bones",11, hufflepuff, false));
+        studentController.createStudent(new HogwartsStudent("Justin Finch-Fletchley",12, hufflepuff, false));
+        studentController.createStudent(new HogwartsStudent("Mandy Brocklehurst",11, ravenclaw, false));
+        studentController.createStudent(new HogwartsStudent("Terry Boot",11, ravenclaw, false));
+        studentController.createStudent(new HogwartsStudent("Michael Corner",12, ravenclaw, false));
+        studentController.createStudent(new HogwartsStudent("Draco Malfoy",11, slytherin, true));
+        studentController.createStudent(new HogwartsStudent("Millicent Bulstrode",11, slytherin, false));
+        studentController.createStudent(new HogwartsStudent("Tracey Davis",12, slytherin, false));
+
+        teacherController.createTeacher(new HogwartsTeacher("Albus Dumbledore", 90));
+        teacherController.createTeacher(new HogwartsTeacher("Minerva McGonagall", 0, gryffindor, true));
+        teacherController.createTeacher(new HogwartsTeacher("Pomona Sprout", 0, hufflepuff, true));
+        teacherController.createTeacher(new HogwartsTeacher("Filius Flitwick", 33, ravenclaw, true));
+        teacherController.createTeacher(new HogwartsTeacher("Severus Snape", 31, slytherin, true));
+
+        List<Student> allStudents = studentController.getAllStudents();
+        List<Teacher> allTeachers = teacherController.getAllTeachers();
+
+        for(int i = 0; i < allStudents.size(); i++){
+            if(i < allTeachers.size()){
+                System.out.println(allTeachers.get(i).getFullName());
+            }
+            System.out.println(allStudents.get(i).getFullName());
+        }
 
 
 //        Subject subject = new Subject("Potions",6,true);

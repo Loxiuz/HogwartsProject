@@ -39,6 +39,7 @@ public class HogwartsStudent extends Student implements HogwartsPerson {
         this.teams = teams;
     }
 
+    @Override
     public House getHouse() {
         return house;
     }

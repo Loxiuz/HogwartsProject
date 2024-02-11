@@ -45,15 +45,9 @@ public class InitData {
         teacherController.createTeacher(new HogwartsTeacher("Filius Flitwick", 33, ravenclaw, true));
         teacherController.createTeacher(new HogwartsTeacher("Severus Snape", 31, slytherin, true));
 
-        List<Student> allStudents = studentController.getAllStudents();
-        List<Teacher> allTeachers = teacherController.getAllTeachers();
 
-        for(int i = 0; i < allStudents.size(); i++){
-            if(i < allTeachers.size()){
-                System.out.println(allTeachers.get(i).getFullName());
-            }
-            System.out.println(allStudents.get(i).getFullName());
-        }
+
+
 
 
 //        Subject subject = new Subject("Potions",6,true);

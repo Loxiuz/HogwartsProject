@@ -75,6 +75,9 @@ public class Person {
         }
     }
 
+    public int getAge(){
+        return age;
+    }
 
     public boolean hasMiddleName() {
         return middleName != null && !middleName.isEmpty();

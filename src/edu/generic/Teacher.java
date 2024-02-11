@@ -8,14 +8,18 @@ public class Teacher extends Person {
     private Date employmentStart;
     private Date employmentEnd;
 
+    public Teacher(String fullName, int age){
+        super(fullName, age);
+    }
+
     public Teacher(String empType, Date employmentStart, Date employmentEnd) {
         this.empType = empType;
         this.employmentStart = employmentStart;
         this.employmentEnd = employmentEnd;
     }
 
-    public Teacher(String fullName, String empType, Date employmentStart, Date employmentEnd) {
-        super(fullName);
+    public Teacher(String fullName, int age, String empType, Date employmentStart, Date employmentEnd) {
+        super(fullName, age);
         this.empType = empType;
         this.employmentStart = employmentStart;
         this.employmentEnd = employmentEnd;
@@ -33,6 +37,10 @@ public class Teacher extends Person {
         this.empType = empType;
         this.employmentStart = employmentStart;
         this.employmentEnd = employmentEnd;
+    }
+
+    public Teacher(String fullName, String empType, Date employmentStart, Date employmentEnd) {
+        super(fullName);
     }
 
     public String getEmpType() {

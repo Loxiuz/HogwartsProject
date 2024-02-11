@@ -8,8 +8,8 @@ public class Student extends Person {
 
     public Student(){}
 
-    public Student(String fullName) {
-        setFullName(fullName);
+    public Student(String fullName, int age) {
+        super(fullName, age);
     }
 
     public Student(

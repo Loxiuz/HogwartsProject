@@ -4,19 +4,11 @@ import edu.generic.Student;
 import edu.generic.Teacher;
 import edu.hogwarts.application.StudentController;
 import edu.hogwarts.application.TeacherController;
-import edu.hogwarts.data.*;
 import org.jetbrains.annotations.NotNull;
-
-import java.time.LocalDate;
-import java.time.ZoneId;
-import java.util.Date;
-
-
-
 
 public class InitData {
 
-    private StudentController studentController;
+    private  StudentController studentController;
     private TeacherController teacherController;
 
     public InitData(@NotNull StudentController studentController, @NotNull TeacherController teacherController){
@@ -25,7 +17,24 @@ public class InitData {
     }
 
     public void initData(){
+        studentController.createStudent(new Student("",0));
+        studentController.createStudent(new Student("",0));
+        studentController.createStudent(new Student("",0));
+        studentController.createStudent(new Student("",0));
+        studentController.createStudent(new Student("",0));
+        studentController.createStudent(new Student("",0));
+        studentController.createStudent(new Student("",0));
+        studentController.createStudent(new Student("",0));
+        studentController.createStudent(new Student("",0));
+        studentController.createStudent(new Student("",0));
+        studentController.createStudent(new Student("",0));
+        studentController.createStudent(new Student("",0));
 
+        teacherController.createTeacher(new Teacher("", 0));
+        teacherController.createTeacher(new Teacher("", 0));
+        teacherController.createTeacher(new Teacher("", 0));
+        teacherController.createTeacher(new Teacher("", 0));
+        teacherController.createTeacher(new Teacher("", 0));
 
 
 

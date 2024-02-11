@@ -5,6 +5,7 @@ public class Person {
     private String firstName;
     private String middleName;
     private String lastName;
+    private int age;
 
     //Constructors
 
@@ -12,6 +13,11 @@ public class Person {
 
     public Person(String fullName) {
         setFullName(fullName);
+    }
+
+    public Person(String fullName, int age) {
+        setFullName(fullName);
+        this.age = age;
     }
 
     public Person(String firstName, String lastName) {

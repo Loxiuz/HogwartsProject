@@ -4,7 +4,6 @@ public class Student extends Person {
 
     private int graduationYear;
     private boolean graduated;
-
     private int enrollmentYear;
 
     public Student(){}

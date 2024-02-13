@@ -58,11 +58,20 @@ public class HogwartsTeacher extends Teacher implements HogwartsPerson {
         this.headOfHouse = headOfHouse;
     }
 
+    public String getRole(){
+        return "Teacher";
+    }
+
     @Override
     public String toString() {
         return "HogwartsTeacher{" +
                 "house=" + house +
                 ", headOfHouse=" + headOfHouse +
                 '}';
+    }
+
+    @Override
+    public int compareTo(HogwartsPerson o) {
+        return 0;
     }
 }

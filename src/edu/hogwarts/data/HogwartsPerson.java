@@ -1,6 +1,10 @@
 package edu.hogwarts.data;
 
-import edu.generic.Person;
-
-public interface HogwartsPerson {
+public interface HogwartsPerson extends Comparable<HogwartsPerson> {
+    String getFirstName();
+    String getMiddleName();
+    String getLastName();
+    int getAge();
+    House getHouse();
+    String getRole();
 }

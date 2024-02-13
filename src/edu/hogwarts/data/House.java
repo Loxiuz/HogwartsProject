@@ -8,6 +8,9 @@ public class House {
     private String founder;
     private String[] color;
 
+    public House(String name){
+        this.name = name;
+    }
     public House(String name, String founder, String[] color) {
         this.name = name;
         this.founder = founder;

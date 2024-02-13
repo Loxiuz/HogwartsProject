@@ -63,6 +63,10 @@ public class HogwartsStudent extends Student implements HogwartsPerson {
         this.teams = teams;
     }
 
+    public String getRole(){
+        return "Student";
+    }
+
     @Override
     public String toString() {
         return "HogwartsStudent{" +
@@ -70,5 +74,10 @@ public class HogwartsStudent extends Student implements HogwartsPerson {
                 ", prefect=" + prefect +
                 ", teams=" + Arrays.toString(teams) +
                 '}';
+    }
+
+    @Override
+    public int compareTo(HogwartsPerson o) {
+        return 0;
     }
 }
